@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name=" description" content=" hematologiacontador" />
+  <meta name="author" content="carotc" />
+  <meta name="keywords" content="salud, tecnologiamedica,hematologia" />
+  <link rel="stylesheet" href="style.css">
+ 
+  <title>CONTADOR HEMATOLOGICO</title>
+</head>
+<h1 class="titulo" >CONTADOR HEMATOLÓGICO</h1>   
+<body>
+ 
+  <table>
+    <tr>
+      <th>Células</th>
+      <th>Recuento</th>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(0)">VAR- Linfocito</button></td>
+      <td id="count0">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(1)">Basofilo</button></td>
+      <td id="count1">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(2)">Eosinofilo</button></td>
+      <td id="count2">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(3)">Linfocito</button></td>
+      <td id="count3">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(4)">Monocito</button></td>
+      <td id="count4">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(5)">Segmentados</button></td>
+      <td id="count5">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(6)">Neutrofilos</button></td>
+      <td id="count6">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(7)">Promielocito</button></td>
+      <td id="count7">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(8)">Mielocito</button></td>
+      <td id="count8">0</td>
+    </tr>
+    <tr>
+      <td><button class="B" onclick="incrementCount(9)">E.ortocromatico</button></td>
+      <td id="count9">0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td id="total">0</td>
+    </tr>
+  </table>
+  <button class="button" onclick="resetCounts()">RESETEAR</button>
+
+  <script>
+    function incrementCount(index) {
+        var countElement = document.getElementById("count" + index);
+        var count = parseInt(countElement.innerText);
+        count++;
+        countElement.innerText = count;
+    
+        updateTotal();
+        checkAlarm();
+      }
+    
+      function updateTotal() {
+        var total = 0;
+        for (var i = 0; i < 10; i++) {
+          var countElement = document.getElementById("count" + i);
+          var count = parseInt(countElement.innerText);
+          total += count;
+        }
+        document.getElementById("total").innerText = total;
+      }
+    
+      function checkAlarm() {
+        var total = parseInt(document.getElementById("total").innerText);
+        if (total >= 100) {
+          alert("¡Alarma! El recuento total ha llegado a 100.");
+        }
+      }
+    
+      function resetCounts() {
+        for (var i = 0; i < 10; i++) {
+          document.getElementById("count" + i).innerText = "0";
+        }
+        document.getElementById("total").innerText = "0";
+      }
+
+  </script>
