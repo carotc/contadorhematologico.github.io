@@ -60,11 +60,10 @@ body {
 
 @media screen and (max-width: 767px) {
   .tabla {  
-         margin-left: -150px;
+         margin-left: -200px;
          }
-  .resetear{
-     margin-right: 150px;
-     margin: center;
+  .resetear {
+     margin-right: 250px;
      display: inline-block;
      margin-top: 20px;
     }
