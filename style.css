@@ -1,5 +1,6 @@
 body { 
     background: url("./FONDO2.png") no-repeat center center/cover;
+    @media (min-width : 767px) and ( max-width :991px );
   }
     table {
       width: 70%;
