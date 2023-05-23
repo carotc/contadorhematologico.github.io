@@ -1,11 +1,12 @@
 body { 
     background: url("./FONDO2.png") no-repeat center center/cover;
-    zoom: reset;
+   
 }
   }
     table {
       width: 70%;
       margin-left: 200px;
+         zoom: reset;
              }
       }
 
