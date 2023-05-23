@@ -72,6 +72,9 @@ body {
 /* Estilos para computadoras */
 @media only screen and (min-width: 1024px) {
   /* Agrega aquí los estilos para computadoras */
+    table {
+    margin-left : 200px
+    }
 }
   
   img {
