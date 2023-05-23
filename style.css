@@ -4,10 +4,7 @@ body {
     table {
       width: 70%;
       margin-left: 200px;
-      @media only screen and (max-width: 767px) {
-      margin-left: center
-   
-        }
+             }
       }
 
     th, td {
@@ -59,13 +56,11 @@ body {
       background-color: wheat;
       opacity: 98%;
       border-bottom: 1px solid gray;
-     
-    }
-
-table {
+}
 
 @media only screen and (max-width: 767px) {
-    margin-left: center
+  .tab {  margin-left: center
+    }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     }
