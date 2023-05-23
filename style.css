@@ -1,8 +1,5 @@
 body { 
     background: url("./FONDO2.png") no-repeat center center/cover;
-    img {
-    with 100%
-    }
   }
     table {
       width: 70%;
@@ -63,10 +60,22 @@ body {
     }
 
 .contenedor {
- @media screen and (min-width: 780px){
-.full-width-img {
-margin: auto;
-width: 90%;
+ /* Estilos para dispositivos móviles */
+@media only screen and (max-width: 767px) {
+  /* Agrega aquí los estilos para dispositivos móviles */
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Agrega aquí los estilos para tablets */
+}
+
+/* Estilos para computadoras */
+@media only screen and (min-width: 1024px) {
+  /* Agrega aquí los estilos para computadoras */
 }
   
-     
+  img {
+  max-width: 100%;
+  height: auto;
+}
