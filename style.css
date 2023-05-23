@@ -1,8 +1,7 @@
 body { 
-    background: url("./FONDO2.png") no-repeat center center/cover;
-    overflow: hidden;
     zoom: reset;
-   }
+    background: url("./FONDO2.png") no-repeat center center/cover;
+           }
     table {
       width: 70%;
       margin-left: 200px;
