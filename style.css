@@ -4,8 +4,7 @@ body {
     table {
       width: 70%;
       margin-left: 200px;
-      @media only screen and (min-width: 768px) and (max-width: 1023px) {
-            margin-left: 200px;
+   
         }
       }
 
@@ -61,9 +60,10 @@ body {
      
     }
 
-.contenedor {
+table {
 
 @media only screen and (max-width: 767px) {
+    margin-left: center
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
     }
