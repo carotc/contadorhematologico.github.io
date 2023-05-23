@@ -4,6 +4,9 @@ body {
     table {
       width: 70%;
       margin : center;
+      @media only screen and (min-width: 1024px) {
+            margin-left: 200px;
+        }
       }
 
     th, td {
@@ -22,7 +25,7 @@ body {
   table {
     border-collapse: collapse;
   margin-top: 50px;
-
+      
   }
   th, td {
   border: 1px solid black;
@@ -68,10 +71,6 @@ body {
 @media only screen and (min-width: 1024px) {
 }
   
-    .tab {
-        @media only screen and (min-width: 1024px) {
-            margin-left: 200px;
-        }
   img {
   max-width: 100%;
   height: auto;
