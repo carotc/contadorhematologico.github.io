@@ -1,6 +1,7 @@
 body { 
-    zoom: reset;
     background: url("./FONDO2.png") no-repeat center center/cover;
+    zoom: reset;
+    touch-action: none;
            }
     table {
       width: 70%;
