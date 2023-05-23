@@ -63,7 +63,8 @@ body {
       margin-left: -200px;
          }
   .button {
-     padding: -10px -20px;
+     padding: 0px 0px;
+      margin: center;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
