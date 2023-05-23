@@ -64,7 +64,8 @@ body {
          }
   .button {
      padding: 0px 0px;
-      margin: center;
+     margin: center;
+     display: none;
     }
 }
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
