@@ -60,6 +60,7 @@ body {
 
 @media screen and (max-width: 767px) {
   .tabla {  
+      width: 70%;
       margin-left: -200px;
          }
   .button {
