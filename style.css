@@ -1,5 +1,6 @@
 body { 
     background: url("./FONDO2.png") no-repeat center center/cover;
+      overflow: hidden;
    }
     table {
       width: 70%;
