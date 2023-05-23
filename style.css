@@ -59,23 +59,19 @@ body {
     }
 
 .contenedor {
- /* Estilos para dispositivos móviles */
+
 @media only screen and (max-width: 767px) {
-  /* Agrega aquí los estilos para dispositivos móviles */
 }
-
-/* Estilos para tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Agrega aquí los estilos para tablets */
-}
-
-/* Estilos para computadoras */
-@media only screen and (min-width: 1024px) {
-  .tab {
-    margin-left: 200px;
     }
+@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 }
   
+    .tab {
+        @media only screen and (min-width: 1024px) {
+            margin-left: 200px;
+        }
   img {
   max-width: 100%;
   height: auto;
